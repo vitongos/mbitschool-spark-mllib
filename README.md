@@ -24,6 +24,7 @@ git clone https://github.com/vitongos/mbitschool-spark-mllib.git mllib-src
 ### Construir las imágenes Docker:
 Ejecutar el siguiente script bajo usuario root:
 ```sh
+cd mllib-src
 chmod +x build-images.sh
 ./build-images.sh
 ```
