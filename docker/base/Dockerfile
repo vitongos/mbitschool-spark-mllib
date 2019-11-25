@@ -26,8 +26,9 @@ RUN apk add --no-cache python3-dev libc-dev libstdc++ g++ gfortran
 RUN apk add --no-cache freetype-dev linux-headers libzmq
 RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade setuptools
+RUN pip3 install wheel
 RUN pip3 install numpy matplotlib ipython jupyter
-RUN pip3 install pandas sympy nose pyspark
+RRUN pip3 install pandas sympy nose pyspark
 
 RUN wget --no-verbose http://apache.mirror.iphh.net/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && tar -xvzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
       && mv spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} spark \
