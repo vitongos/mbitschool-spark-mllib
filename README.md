@@ -30,10 +30,10 @@ chmod +x build-images.sh
 ```
 Se crearán las siguientes imágenes:
 
-* spark-base:2.3.1: Basada en java:alpine-jdk-8 con scala, python3 y spark 2.4.3
-* spark-master:2.3.1: Basada en spark-base, para el master.
-* spark-worker:2.3.1: Basada en spark-base, para los workers.
-* spark-submit:2.3.1: Basada en spark-base, para crear aplicaciones en el cluster (ejecuta y muere).
+* spark-base:2.4.4: Basada en java:alpine-jdk-8 con scala, python3 y spark 2.4.4
+* spark-master:2.4.4: Basada en spark-base, para el master.
+* spark-worker:2.4.4: Basada en spark-base, para los workers.
+* spark-submit:2.4.4: Basada en spark-base, para crear aplicaciones en el cluster (ejecuta y muere).
 
 ### Levantar el cluster:
 

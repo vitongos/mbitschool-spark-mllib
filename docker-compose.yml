@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   spark-master:
-    image: spark-master:2.3.1
+    image: spark-master:2.4.4
     container_name: spark-master
     hostname: spark-master
     ports:
@@ -17,7 +17,7 @@ services:
     environment:
       - "SPARK_LOCAL_IP=spark-master"
   spark-worker-1:
-    image: spark-worker:2.3.1
+    image: spark-worker:2.4.4
     container_name: spark-worker-1
     hostname: spark-worker-1
     depends_on:
@@ -34,7 +34,7 @@ services:
        - ./samples/source:/opt/spark-apps
        - ./samples/data:/opt/spark-data
   spark-worker-2:
-    image: spark-worker:2.3.1
+    image: spark-worker:2.4.4
     container_name: spark-worker-2
     hostname: spark-worker-2
     depends_on:
@@ -51,7 +51,7 @@ services:
        - ./samples/source:/opt/spark-apps
        - ./samples/data:/opt/spark-data
   spark-worker-3:
-    image: spark-worker:2.3.1
+    image: spark-worker:2.4.4
     container_name: spark-worker-3
     hostname: spark-worker-3
     depends_on:
