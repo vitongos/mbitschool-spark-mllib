@@ -1,25 +1,34 @@
 # Demos y fuentes de Spark MLlib en curso de Big Data
 
-Instalación
------------
-
 A continuación se especifica el proceso de instalación del sistema en la máquina virtual de Centos.
 Ejecutar los scripts bajo usuario root.
 
 *Importante: ejecutar la máquina virtual con un mínimo 4 GB de RAM, 8 GB recomendados*
 
-### Prerrequisitos
+## Prerrequisitos
 
 * Docker
-* Docker compose
+* Docker Compose
 
-### Instalar el repositorio clonándolo de Github:
+## Instalar el repositorio clonándolo de Github:
+
 Ejecutar el siguiente script bajo usuario root:
 ```sh
 yum -y install git
 cd
 git clone https://github.com/vitongos/mbitschool-spark-mllib.git mllib-src
 ```
+
+## Instalación de Jupyter con PySpark
+
+Ejecutar el siguiente script:
+```sh
+docker run -it --rm -p 8888:8888 -p 4040:4040 jupyter/pyspark-notebook
+```
+
+Los ejemplos pueden ser subidos a Jupyter desde `mllib-src/samples/data` y `mllib-src/samples/data`.
+
+## Instalación de Clúster Spark
 
 ### Construir las imágenes Docker:
 Ejecutar el siguiente script bajo usuario root:
