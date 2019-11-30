@@ -26,7 +26,7 @@ Ejecutar el siguiente script:
 docker run -it --rm -p 8888:8888 -p 4040:4040 jupyter/pyspark-notebook
 ```
 
-Los ejemplos pueden ser subidos a Jupyter desde `mllib-src/samples/data` y `mllib-src/samples/data`.
+Los ejemplos pueden ser subidos a Jupyter desde `mllib-src/samples/data` y `mllib-src/samples/source`.
 
 ## Instalación de Clúster Spark
 
